@@ -1,5 +1,7 @@
 import reactIcon from "../assets/react.svg";
+// import homeIcon from "./homeIcon.svg";
 import Carousel from "./Carousel";
+import Footer from "./Footer";
 import Grid from "./Grid";
 import Poster from "./Poster";
 import SinglePoster from "./SinglePoster";
@@ -188,6 +190,9 @@ const Home = () => {
 
         {/* Single poster */}
         <SinglePoster />
+
+        {/* footer */}
+        <Footer />
       </div>
     </div>
   );

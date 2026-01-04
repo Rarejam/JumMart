@@ -8,6 +8,14 @@ import WishList from "./Wishlist/WishList";
 import Home from "./Home/Home";
 import Content from "./Categories/Content";
 import ProductCard from "./product/Product";
+import HelpSupport from "./Account/HelpSupport";
+import Orders from "./Account/Orders";
+import Payment from "./Account/Payment";
+import Inbox from "./Account/Inbox";
+import AdminLogin from "./Account/AdminLogin";
+import AdminDashboard from "./Account/AdminDashboard";
+import Checkout from "./Cart/Checkout";
+import About from "./Account/About";
 
 const routes = [
   {
@@ -26,6 +34,7 @@ const routes = [
         path: "product/:id",
         element: <ProductCard />,
       },
+
       {
         path: "categories",
         element: <Categories />,
@@ -66,12 +75,46 @@ const routes = [
         element: <Cart />,
       },
       {
+        path: "checkout",
+        element: <Checkout />,
+      },
+      {
         path: "wishlist",
         element: <WishList />,
       },
       {
         path: "account",
         element: <Account />,
+        children: [
+          {
+            index: true,
+            element: <Orders />,
+          },
+          {
+            path: "support",
+            element: <HelpSupport />,
+          },
+          {
+            path: "payments",
+            element: <Payment />,
+          },
+          {
+            path: "inbox",
+            element: <Inbox />,
+          },
+          {
+            path: "about",
+            element: <About />,
+          },
+          {
+            path: "admin",
+            element: <AdminLogin />,
+          },
+          {
+            path: "admin/dashboard",
+            element: <AdminDashboard />,
+          },
+        ],
       },
     ],
   },

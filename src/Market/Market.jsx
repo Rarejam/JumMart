@@ -1,5 +1,10 @@
 import { Link, Outlet } from "react-router-dom";
-import reacticon from "../assets/react.svg";
+// import reacticon from "../assets/react.svg";
+import homeIcon from "../Home/homeIcon.svg";
+import categoryIcon from "../Categories/categoryIcon.svg";
+import cartIcon from "../Cart/cartIcon.svg";
+import wishlistIcon from "../Wishlist/favorite.svg";
+import accountIcon from "../Account/accountIcon.svg";
 
 const Market = () => {
   return (
@@ -25,35 +30,35 @@ const Market = () => {
           to="/market"
           className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 text-[0.7rem] sm:text-[0.75rem] md:text-[0.85rem] text-white cursor-pointer flex flex-col justify-center items-center rounded-2xl sm:rounded-2xl hover:bg-gradient-to-br from-purple-500 to-pink-500 hover:shadow-lg transition mx-1 sm:mx-2 font-semibold"
         >
-          <img src={reacticon} alt="react" />
+          <img src={homeIcon} alt="react" />
           Home
         </Link>
         <Link
           to="/market/categories"
           className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-20 text-[0.7rem] sm:text-[0.75rem] md:text-[0.85rem] text-white cursor-pointer flex flex-col justify-center items-center rounded-2xl sm:rounded-2xl hover:bg-gradient-to-br from-purple-500 to-pink-500 hover:shadow-lg transition mx-1 sm:mx-2 font-semibold"
         >
-          <img src={reacticon} alt="react" />
+          <img src={categoryIcon} alt="react" />
           Categories
         </Link>
         <Link
           to="/market/cart"
           className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 text-[0.7rem] sm:text-[0.75rem] md:text-[0.85rem] text-white cursor-pointer flex flex-col justify-center items-center rounded-2xl sm:rounded-2xl hover:bg-gradient-to-br from-purple-500 to-pink-500 hover:shadow-lg transition mx-1 sm:mx-2 font-semibold"
         >
-          <img src={reacticon} alt="react" />
+          <img src={cartIcon} alt="react" />
           Cart
         </Link>
         <Link
           to="/market/wishlist"
           className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 text-[0.7rem] sm:text-[0.75rem] md:text-[0.85rem] text-white cursor-pointer flex flex-col justify-center items-center rounded-2xl sm:rounded-2xl hover:bg-gradient-to-br from-purple-500 to-pink-500 hover:shadow-lg transition mx-1 sm:mx-2 font-semibold"
         >
-          <img src={reacticon} alt="react" />
+          <img src={wishlistIcon} alt="react" />
           Wishlist
         </Link>
         <Link
           to="/market/account"
           className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 text-[0.7rem] sm:text-[0.75rem] md:text-[0.85rem] text-white cursor-pointer flex flex-col justify-center items-center rounded-2xl sm:rounded-2xl hover:bg-gradient-to-br from-purple-500 to-pink-500 hover:shadow-lg transition mx-1 sm:mx-2 font-semibold"
         >
-          <img src={reacticon} alt="react" />
+          <img src={accountIcon} alt="react" />
           Account
         </Link>
       </div>

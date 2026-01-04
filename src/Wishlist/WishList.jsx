@@ -8,6 +8,9 @@ const WishList = () => {
     { id: 1, name: "Sneakers", price: "$45,000" },
     { id: 2, name: "Jacket", price: "$32,000" },
     { id: 3, name: "T-Shirt", price: "$8,500" },
+    { id: 3, name: "T-Shirt", price: "$8,500" },
+    { id: 3, name: "T-Shirt", price: "$8,500" },
+    { id: 3, name: "T-Shirt", price: "$8,500" },
   ]);
 
   const removeFromWishlist = (id) => {

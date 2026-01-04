@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import reactIcon from "../assets/react.svg";
 
 const Cart = () => {
@@ -80,9 +81,11 @@ const Cart = () => {
         </div>
 
         {/* Checkout Button */}
-        <button className="w-full bg-purple-600 text-white font-bold py-3 rounded hover:bg-purple-700 transition text-lg sm:text-xl">
-          Proceed to Checkout
-        </button>
+        <Link to="/market/checkout">
+          <button className="w-full bg-purple-600 text-white font-bold py-3 rounded hover:bg-purple-700 transition text-lg sm:text-xl">
+            Proceed to Checkout
+          </button>{" "}
+        </Link>
       </div>
     </div>
   );
